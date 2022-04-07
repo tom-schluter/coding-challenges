@@ -72,18 +72,20 @@ const getMiddle = (s) => s.slice((s.length - 1) / 2, s.length / 2 + 1);
 
 // psuedo code
 
-// if the input is 0 we return true because multiplying 0 by 0 results in infinity
+// the formula to figure out if a number is a perfect square is to is to take the square of the number and see if the result is a whole number. if it is, it's perfect otherwise it's not
 
-// take the input and square it
+// So first we take the number and check if it is less than 0, if it is we return false
 
-// if the last number of the result is 0,1,4,5,6 or 9 it should be a perfect square
+// then we calculate the square root of the number and see if it is a whole number
 
-// in that case return true otherwise return false
+// then return true or false accordingly
 
 const isSquare = (n) => {
   if (n < 0) {
     return false;
+  } else if (Math.sqrt(n) - Math.floor(Math.sqrt(n)) !== 0) {
+    return false;
+  } else {
+    return true;
   }
-  let lastNum = String(n).slice(-1);
-  Number(lastNum) === 0 || 1 || 4 || 5 || 6 || 9 ? true : false;
 };
