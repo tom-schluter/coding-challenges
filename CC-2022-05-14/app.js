@@ -106,6 +106,7 @@ function alphabetWar(fight) {
         break;
       case "q":
         right += 3;
+        break;
       case "d":
         right += 2;
         break;
