@@ -35,3 +35,8 @@ function largestPairSum(numbers) {
 }
 
 //   better method would be to sort and then add the first two indexes
+
+const largestPairSum = (numbers) => {
+  numbers.sort(a, (b) => a - b);
+  return numbers[0] + numbers[1];
+};
