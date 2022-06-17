@@ -27,3 +27,7 @@
 
 const toNumberArray = (stringarray) =>
   stringarray.map((n) => (n = parseFloat(n)));
+
+//   simplified version
+
+const toNumberArray = (stringarray) => stringarray.map(Number);
