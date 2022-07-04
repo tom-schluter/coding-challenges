@@ -14,11 +14,9 @@
 // psuedo code
 
 // create an array with the initial given number as the first element
-
 // create a loop that runs the number of times of the second parameter
 
 // push the current iteration times the current iteration to the arraay
-
 // return the array
 
 function squares(x, n) {
