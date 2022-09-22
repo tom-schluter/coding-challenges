@@ -26,12 +26,12 @@
 
 // if it is add 1 to a counter variable
 
-// return counter variable at the end
+// return counter variable at the end.
 
 function countChar(string, char) {
   let count = 0;
   for (let i = 0; i < string.length; i++) {
-    if (string[i] == char) {
+    if (string[i].toLowerCase() == char.toLowerCase()) {
       count++;
     }
   }
