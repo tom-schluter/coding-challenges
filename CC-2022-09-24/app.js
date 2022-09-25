@@ -13,6 +13,28 @@
 // caffeineBuzz(6)   => "JavaScript"
 // caffeineBuzz(12)  => "CoffeeScript
 
+// parameters
+
+// a non negative integer
+
+// returns
+
+// a string depending on the divisibility of the number
+
+// examples, see above
+
+// psuedo code
+
+// check if n is divisible by 3 and 4 and 2, return appropriate answer
+
+// check if n is divisible by 3 and 4, return answer
+
+// check if n is divisible by 3 and 2, return answer
+
+// check if n is divisible by 3, return answer
+
+// else return mocha_missing! string
+
 function caffeineBuzz(n) {
   if (n % 3 == 0 && n % 4 == 0 && n % 2 == 0) {
     return "CoffeeScript";
